@@ -11,7 +11,7 @@ DataFilename <- "Data.zip"
 
 DataDFn <- paste(DataDir, "/", "Data.zip", sep = "")
 dataDir <- "./data"
-
+##hyug
 if (!file.exists(DataDir)) {
   dir.create(DataDir)
   download.file(url = DataUrl, destfile = DataDFn)
