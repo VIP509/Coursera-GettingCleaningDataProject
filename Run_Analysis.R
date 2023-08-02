@@ -56,7 +56,7 @@ selectedColNames <- gsub("[-()]", "", selectedColNames)
 x_data <- x_data[selectedCols]
 allData <- cbind(s_data, y_data, x_data)
 colnames(allData) <- c("Subject", "Activity", selectedColNames)
-
+#jj
 allData$Subject <- as.factor(allData$Subject)
 allData$Activity <- factor(allData$Activity, levels = a_label[,1], labels = a_label[,2])
 
